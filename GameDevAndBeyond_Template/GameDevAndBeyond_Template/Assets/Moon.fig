@@ -1,0 +1,803 @@
+{
+    "name": "Moon",
+    "spriteSheet": "../Assets/Sprites/prettyMoon.png",
+    "moves": {
+        "0": {
+            "name": "idle",
+            "frames": {
+                "0": {
+                    "spriteLocation": {
+                        "xOffset": 7,
+                        "yOffset": 6,
+                        "width": 46,
+                        "height": 98
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 0.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 20
+                }
+            },
+            "activeFrame": 0,
+            "cancelMoves": {
+                "0": {
+                    "moveName": "forwardWalk",
+                    "earliestFrame": 0,
+                    "onHit": false
+                },
+                "1": {
+                    "moveName": "backwardWalk",
+                    "earliestFrame": 0,
+                    "onHit": false
+                }
+            },
+            "inputConditions": {
+                "0": 0
+            },
+            "buttonCode": 0,
+            "loop": true
+        },
+        "1": {
+            "name": "forwardWalk",
+            "frames": {
+                "0": {
+                    "spriteLocation": {
+                        "xOffset": 436,
+                        "yOffset": 3,
+                        "width": 32,
+                        "height": 101
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "1": {
+                    "spriteLocation": {
+                        "xOffset": 478,
+                        "yOffset": 4,
+                        "width": 31,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "2": {
+                    "spriteLocation": {
+                        "xOffset": 519,
+                        "yOffset": 4,
+                        "width": 36,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "3": {
+                    "spriteLocation": {
+                        "xOffset": 63,
+                        "yOffset": 5,
+                        "width": 42,
+                        "height": 99
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "4": {
+                    "spriteLocation": {
+                        "xOffset": 115,
+                        "yOffset": 4,
+                        "width": 38,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "5": {
+                    "spriteLocation": {
+                        "xOffset": 163,
+                        "yOffset": 4,
+                        "width": 32,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "6": {
+                    "spriteLocation": {
+                        "xOffset": 205,
+                        "yOffset": 3,
+                        "width": 33,
+                        "height": 101
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "7": {
+                    "spriteLocation": {
+                        "xOffset": 248,
+                        "yOffset": 4,
+                        "width": 32,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "8": {
+                    "spriteLocation": {
+                        "xOffset": 290,
+                        "yOffset": 5,
+                        "width": 35,
+                        "height": 98
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "9": {
+                    "spriteLocation": {
+                        "xOffset": 335,
+                        "yOffset": 6,
+                        "width": 43,
+                        "height": 98
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "10": {
+                    "spriteLocation": {
+                        "xOffset": 386,
+                        "yOffset": 5,
+                        "width": 39,
+                        "height": 99
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 7.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                }
+            },
+            "activeFrame": 0,
+            "cancelMoves": {
+                "0": {
+                    "moveName": "idle",
+                    "earliestFrame": 0,
+                    "onHit": false
+                }
+            },
+            "inputConditions": {
+                "0": 1
+            },
+            "buttonCode": 0,
+            "loop": true
+        },
+        "2": {
+            "name": "backwardWalk",
+            "frames": {
+                "0": {
+                    "spriteLocation": {
+                        "xOffset": 386,
+                        "yOffset": 5,
+                        "width": 39,
+                        "height": 99
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "1": {
+                    "spriteLocation": {
+                        "xOffset": 335,
+                        "yOffset": 6,
+                        "width": 43,
+                        "height": 98
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "2": {
+                    "spriteLocation": {
+                        "xOffset": 290,
+                        "yOffset": 5,
+                        "width": 35,
+                        "height": 98
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "3": {
+                    "spriteLocation": {
+                        "xOffset": 248,
+                        "yOffset": 4,
+                        "width": 32,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "4": {
+                    "spriteLocation": {
+                        "xOffset": 205,
+                        "yOffset": 3,
+                        "width": 33,
+                        "height": 101
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "5": {
+                    "spriteLocation": {
+                        "xOffset": 163,
+                        "yOffset": 4,
+                        "width": 32,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "6": {
+                    "spriteLocation": {
+                        "xOffset": 115,
+                        "yOffset": 4,
+                        "width": 38,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "7": {
+                    "spriteLocation": {
+                        "xOffset": 63,
+                        "yOffset": 5,
+                        "width": 42,
+                        "height": 99
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "8": {
+                    "spriteLocation": {
+                        "xOffset": 519,
+                        "yOffset": 4,
+                        "width": 36,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "9": {
+                    "spriteLocation": {
+                        "xOffset": 478,
+                        "yOffset": 4,
+                        "width": 31,
+                        "height": 100
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                },
+                "10": {
+                    "spriteLocation": {
+                        "xOffset": 436,
+                        "yOffset": 3,
+                        "width": 32,
+                        "height": 101
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": -5.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 5
+                }
+            },
+            "activeFrame": 0,
+            "cancelMoves": {
+                "0": {
+                    "moveName": "idle",
+                    "earliestFrame": 0,
+                    "onHit": false
+                }
+            },
+            "inputConditions": {
+                "0": 2
+            },
+            "buttonCode": 0,
+            "loop": true
+        },
+        "3": {
+            "name": "hitStun",
+            "frames": {
+                "0": {
+                    "spriteLocation": {
+                        "xOffset": 8,
+                        "yOffset": 1093,
+                        "width": 65,
+                        "height": 94
+                    },
+                    "originOffset": {
+                        "0": 0,
+                        "1": 0
+                    },
+                    "transformMove": {
+                        "0": 0.0,
+                        "1": 0.0
+                    },
+                    "hurtboxes": {
+                        "0": {
+                            "offset": {
+                                "0": -22,
+                                "1": 0
+                            },
+                            "width": 45,
+                            "height": 100,
+                            "armor": 0.0
+                        }
+                    },
+                    "hitboxes": null,
+                    "objects": null,
+                    "holdDuration": 1
+                }
+            },
+            "activeFrame": 0,
+            "cancelMoves": null,
+            "inputConditions": null,
+            "buttonCode": 0,
+            "loop": false
+        }
+    },
+    "initialFrame": {
+        "xOffset": 7,
+        "yOffset": 6,
+        "width": 46,
+        "height": 98
+    },
+    "spriteFlipped": 1,
+    "scale": 2.0
+}
