@@ -82,8 +82,6 @@ void Game::OnStart()
 	inputManager.RegisterKeyboardBinding(sf::Keyboard::S, EInputEventType::Pressed, std::bind(&Game::SaveState, this), m_inputScope);
 	inputManager.RegisterKeyboardBinding(sf::Keyboard::L, EInputEventType::Pressed, std::bind(&Game::LoadState, this), m_inputScope);
 	inputManager.RegisterMouseBinding(sf::Mouse::Left, EInputEventType::Pressed, std::bind(&Game::LeftClick, this), m_inputScope);
-	
-	SaveState();
 	*/
 }
 

@@ -30,7 +30,7 @@ public:
 
 		name = (pLogicProperties->displayName);
 		spriteSheet = (pRenderProperties->filePath);		
-		//initialFrame = entitySystem->GetComponentSystem<AnimatorSystem>()->FindMoveByName(pAnimatorProperties, "idle")->frames[0].spriteLocation;
+		initialFrame = entitySystem->GetComponentSystem<AnimatorSystem>()->FindMoveByName(pAnimatorProperties, "idle")->frames[0].spriteLocation;
 		spriteFlipped = pTransformProperties->GetSpriteFlipped();
 		scale = pRenderProperties->sprite.getScale().x;
 		for (int i = 0; i < pAnimatorProperties->moves.size(); i++)
