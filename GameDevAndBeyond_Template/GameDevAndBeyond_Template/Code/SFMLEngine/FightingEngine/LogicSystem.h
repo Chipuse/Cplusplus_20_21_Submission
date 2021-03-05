@@ -6,6 +6,7 @@
 
 struct LogicProperties 
 {
+	std::string displayName;
 	int hitPoints = 0;
 	int hitStun = 0;
 	float hitStunVelocity = 0;

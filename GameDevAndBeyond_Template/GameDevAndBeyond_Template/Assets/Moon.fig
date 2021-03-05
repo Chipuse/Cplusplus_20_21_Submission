@@ -395,6 +395,11 @@
                     "moveName": "idle",
                     "earliestFrame": 0,
                     "onHit": false
+                },
+                "1": {
+                    "moveName": "backwardWalk",
+                    "earliestFrame": 0,
+                    "onHit": false
                 }
             },
             "inputConditions": {
@@ -741,6 +746,11 @@
             "cancelMoves": {
                 "0": {
                     "moveName": "idle",
+                    "earliestFrame": 0,
+                    "onHit": false
+                },
+                "1": {
+                    "moveName": "forwardWalk",
                     "earliestFrame": 0,
                     "onHit": false
                 }

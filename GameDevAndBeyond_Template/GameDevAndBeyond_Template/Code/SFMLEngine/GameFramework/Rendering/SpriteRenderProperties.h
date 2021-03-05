@@ -7,6 +7,7 @@ struct SpriteRenderProperties
 	bool visible = true;
 	int drawOrder = -1;
 
+	std::string filePath;
 	sf::Texture texture;
 	sf::Sprite sprite;
 

@@ -18,6 +18,27 @@ public:
 	Fighter(EntitySystem* entitySystem)
 	{
 	}
+
+	Fighter(EntitySystem* entitySystem, EntityId characterID)
+	{
+		//create fighter object based on data in the the current systems
+		SpriteRenderProperties* pRenderProperties = entitySystem->GetComponent<SpriteRenderProperties>(characterID);
+		TransformProperties* pTransformProperties = entitySystem->GetComponent<TransformProperties>(characterID);
+		InputProperties* pInputProperties = entitySystem->GetComponent<InputProperties>(characterID);
+		LogicProperties* pLogicProperties = entitySystem->GetComponent<LogicProperties>(characterID);
+		AnimatorProperties* pAnimatorProperties = entitySystem->GetComponent<AnimatorProperties>(characterID);
+
+		name = (pLogicProperties->displayName);
+		spriteSheet = (pRenderProperties->filePath);		
+		//initialFrame = entitySystem->GetComponentSystem<AnimatorSystem>()->FindMoveByName(pAnimatorProperties, "idle")->frames[0].spriteLocation;
+		spriteFlipped = pTransformProperties->GetSpriteFlipped();
+		scale = pRenderProperties->sprite.getScale().x;
+		for (int i = 0; i < pAnimatorProperties->moves.size(); i++)
+		{
+			moves.push_back(pAnimatorProperties->moves[i]);
+		}
+		myEntity = characterID;
+	}
 	std::string name = "name";
 	std::vector<Move> moves;
 	std::string spriteSheet = "";
@@ -43,6 +64,8 @@ public:
 		AnimatorProperties* pAnimatorProperties = entitySystem->AddComponent<AnimatorProperties>(myEntity);
 		pAnimatorProperties->activeMove = "idle";
 
+		pLogicProperties->displayName = name;
+		pRenderProperties->filePath = spriteSheet;
 		pRenderProperties->texture.loadFromFile(spriteSheet);
 		pRenderProperties->sprite.setTexture(pRenderProperties->texture, true);
 		pRenderProperties->sprite.setTextureRect(sf::IntRect(initialFrame.xOffset, initialFrame.yOffset, initialFrame.width, initialFrame.height));

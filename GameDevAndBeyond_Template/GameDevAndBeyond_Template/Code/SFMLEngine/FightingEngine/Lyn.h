@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Fighter.h"
-
+//used to initialize data once. all Data is also accesible through loading from file
 class Lyn : public Fighter
 {
 	

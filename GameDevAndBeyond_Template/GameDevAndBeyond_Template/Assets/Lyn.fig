@@ -788,10 +788,10 @@
         }
     },
     "initialFrame": {
-        "xOffset": 13,
-        "yOffset": 40,
-        "width": 27,
-        "height": 36
+        "xOffset": 7,
+        "yOffset": 6,
+        "width": 46,
+        "height": 98
     },
     "spriteFlipped": -1,
     "scale": 5.0

@@ -123,11 +123,11 @@ public:
 
 	virtual void Update(float deltaSeconds) override;
 	int GetFreezeFrames() { return freezeFrames; }
-private:
-	int freezeFrames = 0;
 	Move* FindCurrentMove(AnimatorProperties* animProps);
 	Move* EngageNewMove(AnimatorProperties* animProps, std::string moveName, Move* lastMove);
 	Move* FindMoveByName(AnimatorProperties* animProps, std::string moveName);
+private:
+	int freezeFrames = 0;
 
 
 	bool EntityVectorContains(std::vector<EntityId> vec, EntityId number)
