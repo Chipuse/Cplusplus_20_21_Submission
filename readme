@@ -17,5 +17,6 @@ Controls:
 Character files in json format are located in the asset folder
 
 
-Originally my intention was to make a runtime character editor to create new fighter from scratch or adjust existing ones, but I had no time.
-In the end I just implemented serialization for the character Data and a way to serialize them either from instanced Fighter object or by EntityId and the actual data in the different properties. Later would be very useful/crucial for the character editor and maybe I will workon that in the future.
+Originally my intention was to make a runtime character editor to create new fighter from scratch or adjust existing ones, but I had not enough time.
+In the end I just implemented serialization for the character Data and a way to serialize them either from instanced Fighter object or by EntityId and the actual data in the different properties. 
+The serialization from entityID is important for the character editor and maybe I will work on that in the future.
